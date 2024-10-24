@@ -89,8 +89,9 @@ void findTreasure(char environment[MAX_ROWS][MAX_COLS], int environmentRows, int
             char move = _getch();
             environment[u][v] = ' '; 
 
-            int newU = u;
-            int newV = v; 
+            // Temporary variables for new position
+            int newU = u; 
+            int newV = v;
 
             switch (move) {
             case 'a': 
@@ -113,9 +114,10 @@ void findTreasure(char environment[MAX_ROWS][MAX_COLS], int environmentRows, int
             }
 
             
-            if (!isWall(environment[newU][newV])) {
-                u = newU; 
-                v = newV;
+            // Check if the new position is not a border or inner wall
+            if (environment[newU][newV] != '|' && environment[newU][newV] != '-') {
+                 u = newU;
+                 v = newV;
             }
 
             environment[u][v] = character; 
