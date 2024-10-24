@@ -32,13 +32,7 @@ bool readFile(char environment[MAX_ROWS][MAX_COLS], int& rows, int& cols, const 
         ++rows;
     }
 
-    /*
-    for (int r = rows; r < MAX_ROWS; ++r) {
-        for (int c = 0; c < MAX_COLS; ++c) {
-            environment[r][c] = ' ';
-        }
-    }
-    */
+    
 
     file.close(); 
     return true; 
@@ -49,10 +43,6 @@ void clearConsole() {
     system("CLS");
 }
 
-
-bool isWall(char tile) {
-    return (tile == '-' || tile == '|');
-}
 
 
 void findTreasure(char environment[MAX_ROWS][MAX_COLS], int environmentRows, int environmentCols) {

@@ -1,4 +1,4 @@
 ﻿  MazeItI.cpp
 C:\Users\Merna Tarek\Desktop\MazeItI\MazeItI.cpp(25,25): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Merna Tarek\Desktop\MazeItI\MazeItI.cpp(62,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Merna Tarek\Desktop\MazeItI\MazeItI.cpp(52,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   MazeItI.vcxproj -> C:\Users\Merna Tarek\Desktop\MazeItI\x64\Debug\MazeItI.exe
